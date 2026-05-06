@@ -27,15 +27,15 @@ public class TrapezioTest {
         casosPerimetro = new ArrayList<>();
         casosPerimetro.add(new double[] {
                 1, 1, 1, 1, 1,
-                1 + 1 + 1 + 1
+                4
         });
         casosPerimetro.add(new double[] {
                 2, 2, 2, 2, 2,
-                2 + 2 + 2 + 2
+                8
         });
         casosPerimetro.add(new double[] {
                 3.5, 4.5, 5.5, 6.5, 7.5,
-                3.5 + 4.5 + 6.5 + 7.5
+                22
         });
     }
 
