@@ -28,6 +28,7 @@ class CirculoTest {
         casosPerimetro.add(new double[] { 1, 2 * Math.PI * 1 });
         casosPerimetro.add(new double[] { 2, 2 * Math.PI * 2 });
         casosPerimetro.add(new double[] { 3.5, 2 * Math.PI * 3.5 });
+
     }
 
     @Test
@@ -44,5 +45,16 @@ class CirculoTest {
             circulo.setRaio(caso[0]);
             assertEquals(caso[1], circulo.perimetro(), 0.0001);
         }
+    }
+
+    @Test
+    void deveSetarRaioPositivo() {
+        circulo.setRaio(2);
+        assertEquals(2, circulo.getRaio());
+    }
+
+    @Test
+    void deveLancarExcecaoAoSetarRaioNegativo() {
+        assertThrows(GeometriaException.class, () -> circulo.setRaio(-1));
     }
 }
