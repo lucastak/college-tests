@@ -11,9 +11,13 @@ class CilindroTest {
     private Circulo base;
     private Cilindro cilindro;
 
+    static Circulo criarCirculo(double raio) {
+        return new Circulo(raio);
+    }
+
     @BeforeEach
     void setup() {
-        base = new Circulo(2);
+        base = criarCirculo(2);
         cilindro = new Cilindro(base, 5);
     }
 
