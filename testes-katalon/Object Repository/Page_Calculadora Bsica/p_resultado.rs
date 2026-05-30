@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>p_resultado</name>
+   <tag></tag>
+   <elementGuidId>12594acd-3a2e-4562-be4d-a163a654e2e3</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#resultado</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id = 'resultado']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Resultado: -&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>p</value>
+      <webElementGuid>be1d5735-12d7-41d8-beb6-d16a4d9b7eba</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>resultado</value>
+      <webElementGuid>c5b803bc-27e0-4eeb-9d9f-8f53d6121c43</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Resultado: -</value>
+      <webElementGuid>c58eef13-fe59-4ea7-b7f9-f648f77a349d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-ef6a3a08fce502cd2a9dfd8ae5abcdb1</value>
+      <webElementGuid>331e1b7c-d990-4937-bde5-e073771d9762</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id = 'resultado']</value>
+      <webElementGuid>78498524-bdcb-4415-a10a-cd0c5eadd6eb</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@id = 'resultado']</value>
+      <webElementGuid>cf653bb5-ae62-459c-8b87-75d35adaf840</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//p[@id = 'resultado' and (text() = 'Resultado: -' or . = 'Resultado: -')]</value>
+      <webElementGuid>c9e8bb53-3474-4485-aed3-659fad7421a8</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
