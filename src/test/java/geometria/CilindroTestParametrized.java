@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertSame;
 import static org.junit.jupiter.params.provider.Arguments.arguments;
 
 import java.util.stream.Stream;
-import java.util.function.DoubleFunction;
+
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -14,12 +14,9 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 class CilindroTestParametrized {
 
-    private static final DoubleFunction<Circulo> FABRICA_CIRCULO = CilindroTest::criarCirculo;
-
     @ParameterizedTest
     @MethodSource("dadosAreaCilindro")
-    void deveCalcularAreaDoCilindro(double raio, double altura) {
-        Circulo base = FABRICA_CIRCULO.apply(raio);
+    void deveCalcularAreaDoCilindro(Circulo base, double altura) {
         Cilindro cilindro = new Cilindro(base, altura);
 
         double esperado = 2 * base.area() + altura * base.perimetro();
@@ -28,9 +25,9 @@ class CilindroTestParametrized {
 
     private static Stream<Arguments> dadosAreaCilindro() {
         return Stream.of(
-                arguments(2.0, 5.0),
-                arguments(1.5, 3.0),
-                arguments(4.0, 2.5));
+                arguments(new Circulo(2.0), 5.0),
+                arguments(new Circulo(1.5), 3.0),
+                arguments(new Circulo(4.0), 2.5));
     }
 
     @ParameterizedTest
@@ -40,7 +37,7 @@ class CilindroTestParametrized {
             "4, 2.5"
     })
     void deveCalcularVolumeDoCilindro(double raio, double altura) {
-        Circulo base = FABRICA_CIRCULO.apply(raio);
+        Circulo base = new Circulo(raio);
         Cilindro cilindro = new Cilindro(base, altura);
 
         double esperado = base.area() * altura;
@@ -54,7 +51,7 @@ class CilindroTestParametrized {
             "1.2, 9.4"
     })
     void deveRetornarBaseEAlturaInformadasNoConstrutor(double raio, double altura) {
-        Circulo base = FABRICA_CIRCULO.apply(raio);
+        Circulo base = new Circulo(raio);
         Cilindro cilindro = new Cilindro(base, altura);
 
         assertSame(base, cilindro.getBase());
